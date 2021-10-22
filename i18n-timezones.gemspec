@@ -5,14 +5,14 @@ require 'i18n_timezones/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.required_ruby_version = '>= 2.7.3'
+  s.required_ruby_version = '>= 2.7.4'
   s.name = 'i18n-timezones'
   s.version = I18nTimezones::VERSION
   s.authors = ['Randy Antler']
   s.email = ['randy@kudoway.com']
   s.homepage = 'https://github.com/onomojo/i18n-timezones'
   s.summary = 'I18n Timezone Translations'
-  s.description = 'The purpose of this gem is to provide timezone name translations for the ActiveSupport::Timezone module.'
+  s.description = 'The purpose of this gem is to provide timezone name translations for the ActiveSupport::Timezone class.'
   s.files = Dir.glob('lib/**/*') + Dir.glob('rails/locale/*') + %w(README.md MIT-LICENSE)
   s.test_files = Dir['test/**/*']
   s.require_path = 'lib'
