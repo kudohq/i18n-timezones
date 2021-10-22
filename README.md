@@ -10,13 +10,13 @@ translation for each locale.
 ## Some background on this gem
 
 This gem is forked from this original reposistory that was generously created and published over 10 years ago:
-<https://github.com/onomojo/i18n-timezones>. It seemed as though the gem was not receiving the attention it deserved given
-the large number of open pull requests for the years, and the number of forks created by other users.
+<https://github.com/onomojo/i18n-timezones>. It seemed as though the gem was not receiving the attention it deserved
+given the large number of open pull requests for the years, and the number of forks created by other users.
 
-Since [KUDO](https://meetkudo.com/) is a company with many language specialties, we felt that it would beneficial to the
-community if we took this gem under our wing to help it grow and improve. It is our intention to expand the number of
-supported locales and to correct any errors found in the existing translations. Of course, contributions from the
-community are welcomed with open arms!
+Since [KUDO](https://kudoway.com/about/careers/) is a company with many language specialties, we felt that it would
+beneficial to the community if we took this gem under our wing to help it grow and improve. It is our intention to
+expand the number of supported locales and to correct any errors found in the existing translations. Of course,
+contributions from the community are welcomed with open arms!
 
 ## Currently supported Locales
 
@@ -62,12 +62,12 @@ You can also use the `ActiveSupport:TimeZone` directly as shown below:
 ```rb
 I18n.locale = :de
 ActiveSupport::TimeZone.all.second.name
-=> "American Samoa"
+=> "Amerikanisch-Samoa"
 ```
 
 ## Implementation
 
-The translation of the timezones is accomplished by overriding the `to_s` method in the `ActiveSupport:TimeZone` module
+The translation of the timezones is accomplished by overriding the `to_s` method in the `ActiveSupport:TimeZone` class
 to translate the `name` property as shown below:
 
 ```rb
